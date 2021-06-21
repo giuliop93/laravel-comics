@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('layout');
-});
+})->name("pagina_home");
 
 Route::get('/', function () {
     return view('single');
