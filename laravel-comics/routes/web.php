@@ -14,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layout');
+    $datiComics = config("comics");
+
+    // $datiView = [
+    //     "comicsList" => $datiComics,
+    // ];
+
+    return view('homepage', $datiComics);
 })->name("pagina_home");
 
-Route::get('/', function () {
-    return view('single');
-});
+
+
+// // Route::get('/', function () {
+// //     return view('single');
+// // });

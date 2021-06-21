@@ -8,4 +8,5 @@
 .blueraw {
  background-color: dodgerblue;
  height: 20px;
+ display: flex;
 }
